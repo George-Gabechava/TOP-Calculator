@@ -1,24 +1,27 @@
-.body {
-    display: flex;
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    background-color: grey;
+    padding: 20px;
 }
 
-.container {
+#container-buttons {
     display: flex;
-    color: blue;
-    background-color: red;
-    padding: 20px;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 #mydisplay {
+    display: block;
     height: 100px;
-    width: 500px;
+    width: 496px;
     font-size: 50px;
-}
-
-.container-buttons {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .btn-group1 button {
@@ -26,6 +29,7 @@
     height: 100px;
     width: 100px;
     font-size: x-large; 
+    margin-top: 3px;
 }
 
 .btn-group1 :hover {
@@ -40,9 +44,10 @@
     background-color: default;
     height: 100px;
     width: 100px;
-    font-size: x-large;  
+    font-size: x-large;
+    margin-top: 3px;
 }
 
 #equalsBtn, #clearBtn {
-    width: 300px;
+    width: 308px;
 }
