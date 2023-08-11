@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <script src="calculator.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div id = 'container'>
+        <div id = 'display'><span id="displayScreen"></span></div>
+    
+        <div id = 'container-buttons'>
+            <div class = "btn-group1">
+                <button id = "clearBtn" onclick = 'clearBtn()'>AC</button>
+                <!-- bonus functions
+                <button onclick = 'signBtn()'>+/-</button>
+                <button onclick = 'percentBtn()'>%</button>
+                -->
+                <button onclick = 'updateOperator("/")'>/</button>
+                <button onclick = 'updateOperator("*")'>*</button>
+            </div>
+            <div class="btn-group2">
+                <button onclick = 'updateNumber("6")'>6</button>
+                <button onclick = 'updateNumber("7")'>7</button>
+                <button onclick = 'updateNumber("8")'>8</button>
+                <button onclick = 'updateNumber("9")'>9</button>
+                <button onclick = 'updateNumber("0")'>0</button>
+            </div>
+            <div class="btn-group2">
+                <button onclick = 'updateNumber("1")'>1</button>
+                <button onmousedown = 'updateNumber("2")'>2</button>
+                <button onclick = 'updateNumber("3")'>3</button>
+                <button onclick = 'updateNumber("4")'>4</button>
+                <button onclick = 'updateNumber("5")'>5</button>
+            </div>
+            <div class = "btn-group1">
+                <!-- bonus functions
+                <button onclick = '()'>.</button>
+                -->
+                <button onclick = 'updateOperator("-")'>-</button>
+                <button onclick = 'updateOperator("+")'>+</button>
+                <button id = "equalsBtn" onclick = 'operate(inputA, operator, inputB)'>=</button>
+            </div>
+
+        </div>
+
+
+    
+    
+    </div>
+
+    
+
+
+  
+
+
+
+  
+
+</body>
+
+<footer>
+  <br>
+  <br>
+  <br>
+  <p> Author: George Gabechava</p>
+  <p> <a href="https://github.com/George-Gabechava">https://github.com/George-Gabechava</a></p>
+  <p>Created for The Odin Project.</p>
+  
+  
+</footer>
+
+
+
+</html>

@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+
+}
+
+#display {
+    /* Probably need make a string function or object */
+
+    height: 100px;
+    width: 500px;
+    font-size: 50px;
+}
+
+.container-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-group1 button {
+    background-color: cyan;
+    height: 100px;
+    width: 100px;
+    font-size: x-large; 
+}
+
+.btn-group2 button {
+    background-color: default;
+    height: 100px;
+    width: 100px;
+    font-size: x-large;  
+}
+
+#equalsBtn, #clearBtn {
+    width: 300px;
+}
