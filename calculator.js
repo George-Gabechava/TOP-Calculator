@@ -20,8 +20,22 @@ const operate = function(strA, op, strB) {
     let a = Number(strA);
     let b = Number(strB);
     afterEqual = true;
-    
-    
+
+    if (op === '/') {
+        //console.log(strB, typeof(strB));
+        if (strB === '0') {
+            toDisplay('>:( DIVIDED BY 0');
+            inputB = '';
+            return;
+        }
+
+        solution = divide(a,b);
+        inputA = String(solution);
+        inputB = '';
+        operator = '';
+        toDisplay(inputB || inputA);
+        return solution;
+    }
     
     if (op === '+') {
         solution = add(a,b);
@@ -52,20 +66,7 @@ const operate = function(strA, op, strB) {
         return muliply(a,b);
     }
 
-    if (op === '/') {
-        console.log(strB, typeof(strB));
-        if (strB === '0') {
-            toDisplay('>:( DIVIDED BY 0');
-            return;
-        }
-
-        solution = divide(a,b);
-        inputA = String(solution);
-        inputB = '';
-        operator = '';
-        toDisplay(inputB || inputA);
-        return solution;
-    }
+ 
 
 }
 
@@ -89,15 +90,24 @@ const updateNumber = function(str) {
     else {
         inputA += str;
     }
-
+    /*
     console.log((str));
     console.log('a', inputA);
     console.log('b', inputB);
+    */
     toDisplay(inputB || inputA);
 }
 
 const updateOperator = function(str) {
-    console.log(str);
+    //console.log(str);
+    if (inputB === '0' && operator == '/') {
+        toDisplay('>:( DIVIDED BY 0');
+        inputA = '0';
+        inputB = '';
+        return;
+    }
+
+
     if (inputB) {
         operate(inputA, operator, inputB);
         toDisplay(inputA);

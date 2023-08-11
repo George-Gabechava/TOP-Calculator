@@ -1,11 +1,16 @@
+.body {
+    display: flex;
+}
+
 .container {
     display: flex;
+    color: blue;
+    background-color: red;
+    padding: 20px;
 
 }
 
-#display {
-    /* Probably need make a string function or object */
-
+#mydisplay {
     height: 100px;
     width: 500px;
     font-size: 50px;
@@ -21,6 +26,14 @@
     height: 100px;
     width: 100px;
     font-size: x-large; 
+}
+
+.btn-group1 :hover {
+    background-color: lightblue;
+}
+
+.btn-group1 :active {
+    background-color: lightcyan;
 }
 
 .btn-group2 button {
